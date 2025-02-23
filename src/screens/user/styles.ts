@@ -1,0 +1,81 @@
+import { Dimensions, StyleSheet } from "react-native";
+import { themes } from "../../global/themes";
+
+export const styles = StyleSheet.create({
+    container:{
+        flex:1,
+        justifyContent:'center',
+        alignItems:'center',
+        
+    },
+    boxUser:{
+        width:'93%',
+        height:'90%',
+        backgroundColor:'#302E2E',
+        borderRadius:30,
+        marginTop:13,
+        padding:10
+    },
+    textTitle:{
+        fontSize:32,
+        fontWeight:'bold',
+        color:themes.colors.secondary,
+        textAlign:'center',
+    },
+    boxTop:{
+        alignItems:'center',
+        height:Dimensions.get('window').height/5,
+        padding:20
+    },
+    userImage:{
+        width:75,
+        height:75,
+    },
+    textUsername:{
+        fontSize:19,
+        color:themes.colors.secondary,
+        fontWeight:'semibold',
+        textDecorationLine:'underline',
+        marginTop:20
+    },
+    boxMiddle:{
+        //backgroundColor:'blue',
+        height:Dimensions.get('window').height/2,
+        gap:10
+    },
+    subTitle:{
+        fontSize:19,
+        color:themes.colors.secondary,
+        fontWeight:'bold',
+    },
+    descriptionText:{
+        fontSize:14,
+        color:themes.colors.secondary,
+    },
+    boxMusics:{
+        flex:1,
+        flexDirection:'row',
+        marginTop:20
+    },
+    boxItem:{
+        flex:1,
+        width:"33%",
+        alignItems:'center',
+        height:175
+    },
+    musicCover:{
+        width:95,
+        height:95
+    },
+    boxIcons:{
+        flex:1,
+        flexDirection:'row',
+        gap:20,
+        marginTop:10
+    },
+    icon:{
+        width:27,
+        height:27
+    }
+    
+});
